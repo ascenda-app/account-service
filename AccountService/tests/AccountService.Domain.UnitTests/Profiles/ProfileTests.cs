@@ -115,9 +115,9 @@ public sealed class ProfileTests
     {
         Profile profile = ProfileMother.Create();
 
-        profile.SetAvatar(new Avatar("peaker/dev/avatars/a1"));
+        profile.SetAvatar(new Avatar("ascenda/dev/avatars/a1"));
 
-        profile.Avatar!.PublicId.Should().Be("peaker/dev/avatars/a1");
+        profile.Avatar!.PublicId.Should().Be("ascenda/dev/avatars/a1");
         profile.DomainEvents.OfType<ProfileAvatarReplacedDomainEvent>().Should().BeEmpty();
     }
 

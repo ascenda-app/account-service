@@ -18,5 +18,5 @@ public sealed class CloudinaryOptions
     public string AuthTokenKey { get; init; } = string.Empty;
 
     [Required]
-    public string Folder { get; init; } = "peaker/dev/avatars";
+    public string Folder { get; init; } = "ascenda/dev/avatars";
 }

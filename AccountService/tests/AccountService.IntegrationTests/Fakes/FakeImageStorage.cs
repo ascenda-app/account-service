@@ -15,7 +15,7 @@ internal sealed class FakeImageStorage : IImageStorage
     public Task<Result<StoredImage>> UploadAvatarAsync(AvatarUpload upload, CancellationToken cancellationToken)
     {
         int index = Interlocked.Increment(ref _counter);
-        StoredImage stored = new($"peaker/test/avatars/avatar-{index}");
+        StoredImage stored = new($"ascenda/test/avatars/avatar-{index}");
 
         return Task.FromResult<Result<StoredImage>>(stored);
     }
