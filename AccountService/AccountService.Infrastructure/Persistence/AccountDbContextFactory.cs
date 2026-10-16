@@ -8,7 +8,7 @@ internal sealed class AccountDbContextFactory : IDesignTimeDbContextFactory<Acco
     private const string ConnectionStringVariable = "ConnectionStrings__AccountDatabase";
 
     private const string ModelOnlyConnectionString =
-        "server=localhost;port=3308;database=peaker_accounts";
+        "server=localhost;port=3308;database=ascenda_accounts";
 
     public AccountDbContext CreateDbContext(string[] args)
     {

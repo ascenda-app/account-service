@@ -30,9 +30,9 @@ namespace AccountService.IntegrationTests;
 public sealed class AccountServiceApiFactory : WebApplicationFactory<Program>, IAsyncLifetime
 {
     private readonly MySqlContainer _mySql = new MySqlBuilder("mysql:8.4")
-        .WithDatabase("peaker_accounts")
-        .WithUsername("peaker")
-        .WithPassword("peaker")
+        .WithDatabase("ascenda_accounts")
+        .WithUsername("ascenda")
+        .WithPassword("ascenda")
         .Build();
 
     private readonly RabbitMqContainer _rabbitMq = new RabbitMqBuilder("rabbitmq:3-management-alpine").Build();
@@ -67,7 +67,7 @@ public sealed class AccountServiceApiFactory : WebApplicationFactory<Program>, I
     {
         HttpClient client = CreateClient();
         client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue(
-            "Bearer", _tokenSigning.CreateAccessToken(userId, [PeakerRoles.Admin]));
+            "Bearer", _tokenSigning.CreateAccessToken(userId, [AscendaRoles.Admin]));
 
         return client;
     }

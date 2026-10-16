@@ -8,7 +8,7 @@ namespace AccountService.IntegrationTests.ExternalServices;
 
 public sealed class CloudinaryAvatarUrlSignerTests
 {
-    private const string PublicId = "peaker/test/avatars/avatar";
+    private const string PublicId = "ascenda/test/avatars/avatar";
     private const string AuthTokenMarker = "__cld_token__";
 
     [Fact]
@@ -35,7 +35,7 @@ public sealed class CloudinaryAvatarUrlSignerTests
     {
         CloudinaryOptions options = new()
         {
-            CloudName = "peaker-test",
+            CloudName = "ascenda-test",
             ApiKey = "test-key",
             ApiSecret = "test-secret",
             AuthTokenKey = authTokenKey

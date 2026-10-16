@@ -15,7 +15,7 @@ namespace AccountService.Application.UnitTests.Profiles;
 public sealed class UploadAvatarCommandHandlerTests
 {
     private static readonly Guid UserId = Guid.CreateVersion7();
-    private static readonly StoredImage Stored = new("peaker/dev/avatars/a1");
+    private static readonly StoredImage Stored = new("ascenda/dev/avatars/a1");
 
     private readonly IProfileRepository _profileRepository = Substitute.For<IProfileRepository>();
     private readonly IImageStorage _imageStorage = Substitute.For<IImageStorage>();

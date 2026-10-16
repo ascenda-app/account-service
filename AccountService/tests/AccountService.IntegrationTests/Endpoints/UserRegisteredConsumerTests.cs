@@ -65,7 +65,7 @@ public sealed class UserRegisteredConsumerTests(AccountServiceApiFactory factory
     {
         MessageId = Guid.CreateVersion7(),
         UserId = userId,
-        Email = $"user-{userId:N}@peaker.io",
+        Email = $"user-{userId:N}@example.com",
         Username = ApiTestHelpers.UniqueUsername(),
         OccurredAtUtc = DateTime.UtcNow
     };

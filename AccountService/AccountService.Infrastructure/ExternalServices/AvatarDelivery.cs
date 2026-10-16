@@ -5,7 +5,7 @@ namespace AccountService.Infrastructure.ExternalServices;
 public static class AvatarDelivery
 {
     public const string AuthenticatedType = "authenticated";
-    public const string QuarantineTag = "peaker-quarantine";
+    public const string QuarantineTag = "ascenda-quarantine";
     public const string StoredFormat = "webp";
 
     private const string StripProfileFlag = "strip_profile";

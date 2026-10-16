@@ -1,6 +1,6 @@
 # account-service
 
-Perfiles de usuario, avatares y colecciones de montañas. MySQL 8.4 (`peaker_accounts`).
+Perfiles de usuario, avatares y colecciones de montañas. MySQL 8.4 (`ascenda_accounts`).
 Ver `.claude/docs/DESIGN.md` §5.
 
 ## Puesta en marcha local

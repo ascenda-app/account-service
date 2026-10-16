@@ -14,7 +14,7 @@ public sealed class TokenAudienceTests(AccountServiceApiFactory factory)
     {
         Guid userId = ApiTestHelpers.NewUserId();
         await _factory.SeedProfileAsync(userId, ApiTestHelpers.UniqueUsername());
-        using HttpClient client = _factory.CreateClientWithAudience(userId, "peaker-ascent");
+        using HttpClient client = _factory.CreateClientWithAudience(userId, "ascenda-ascent");
 
         using HttpResponseMessage response = await client.GetAsync("/api/profiles/me");
 
@@ -26,7 +26,7 @@ public sealed class TokenAudienceTests(AccountServiceApiFactory factory)
     {
         Guid userId = ApiTestHelpers.NewUserId();
         await _factory.SeedProfileAsync(userId, ApiTestHelpers.UniqueUsername());
-        using HttpClient client = _factory.CreateClientWithAudience(userId, "peaker-account");
+        using HttpClient client = _factory.CreateClientWithAudience(userId, "ascenda-account");
 
         using HttpResponseMessage response = await client.GetAsync("/api/profiles/me");
 
